@@ -1,0 +1,27 @@
+# SOC-L2: lista blanca inicial.
+# Todo archivo o carpeta queda ignorado salvo las excepciones exactas.
+# Incluye pruebas privadas, .venv/, tmp/, output/, Excel, respaldos, caches,
+# configuraciones privadas, temporales y archivos nuevos no autorizados.
+*
+
+# Archivos permitidos unicamente en la raiz.
+!/.gitignore
+!/app.py
+!/importer.py
+!/detection.py
+!/dashboard.py
+!/local_ai.py
+!/reports.py
+!/requirements.txt
+!/README.md
+
+# Reabrir docs/ y permitir solo el documento indicado.
+!/docs/
+/docs/*
+!/docs/INSTALACION_WINDOWS.md
+
+# Permitir exclusivamente las dos pruebas publicas autorizadas.
+!/tests/
+/tests/*
+!/tests/test_detection_synthetic.py
+!/tests/test_display.py

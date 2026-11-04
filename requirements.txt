@@ -1,0 +1,10 @@
+# Dependencias de ejecución
+streamlit>=1.40,<2
+altair>=5,<7
+pandas==3.0.1
+openpyxl==3.1.5
+reportlab==4.4.9
+
+# Dependencias de pruebas
+pytest>=8,<10
+pypdf>=6,<7
